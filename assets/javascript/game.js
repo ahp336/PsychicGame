@@ -13,18 +13,17 @@ var lossesText = document.getElementById("losses");
 var guessesLeftText = document.getElementById("numberofguess");
 
 var updateGuessLeft = function(){
-    document.getElementById("numberofguess") = guessesLeft;
+    document.getElementById("numberofguess").innerText = guessesLeft;
 
 };
 
 var computerGuessesX = function(){
     computerGuesses = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    console.log(computerGuesses);
 };
 
 var lettersGuessed = function(){
 
-    document.getElementById("userinput").innerHTML = userPressed;
+    document.getElementById("userinput").innerText = userPressed.push();
 
 };
 
